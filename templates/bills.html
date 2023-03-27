@@ -1,0 +1,40 @@
+{% extends "base.html" %} {% block content %}
+
+<h4 align="center">Group bill`s</h4>
+
+<div class="content-container">
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>DESCRIPTION</th>
+          <th>AMOUNT</th>
+        </tr>
+      </thead>
+      <tbody>
+        {%for x in bill %}
+        <tr>
+          <td>{{x.id}}</td>
+          <td>{{x.expense_description}}</td>
+          <td>{{x.expense_amount}}</td>
+        </tr>
+        {%endfor%}
+      </tbody>
+    </table>
+  </div>
+  <div class="form-container">
+    <form action="{{ url_for('new_bill', id=id) }}" method="POST">
+      <label for=""><strong>Add Bill</strong></label
+      ><br /><br />
+      <label for="expense_amount"><strong> Amount:</strong> </label>
+      <input type="text" name="expense_amount" id="expense_amount" />
+      <label for="expense_description"><strong>Description: </strong></label>
+      <input type="text" name="expense_description" id="expense_description" />
+      <input type="hidden" name="group_id" value="{{ id }}" />
+      <input type="submit" value="Add" />
+    </form>
+  </div>
+</div>
+
+{% endblock %}

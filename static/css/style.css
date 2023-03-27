@@ -1,0 +1,110 @@
+body {
+  background-color: rgb(246, 244, 244);
+  color: black;
+}
+
+.nav-link {
+  color: black;
+}
+
+h5 {
+  color: gray;
+}
+
+.col-sm-4 {
+  padding-top: 30px;
+  margin: auto;
+}
+
+.flash {
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.flash.success {
+  background: #7e7eed;
+  color: rgb(4, 4, 4);
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.flash.error {
+  background: red;
+  color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.underForm a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+img {
+  width: 150px;
+  background-color: rgb(246, 244, 244);
+}
+
+.content-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 70%;
+  margin: 50px auto 0 auto;
+}
+
+.main-container {
+  display: flex;
+  align-items: center;
+  width: 40%;
+  margin: 50px auto 0 auto;
+}
+
+.container {
+  width: 60%;
+}
+
+.card {
+  margin-top: 20px;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  margin: 100px auto;
+}
+.input-container {
+  width: 50%;
+  margin: 100px auto;
+}
+
+.form-container {
+  margin: 50px;
+}
+
+.table-container {
+  width: 100%;
+}
+
+table {
+  width: 100%;
+}
+
+table th,
+table td {
+  text-align: center;
+}
+
+tbody {
+  margin-top: 5px;
+}
+tbody tr:nth-child(even) {
+  background: #e8e7e1;
+}
+
+input {
+  border-radius: 5px;
+  border: grey solid 2px;
+}
